@@ -226,7 +226,7 @@ input,select,textarea{font-family:inherit;}
 }
 .doc-card{
   position:relative;z-index:3;
-  width:340px;height:480px;
+  width:340px;height:540px;
   background:#ffffff;
   color:var(--black);
   border-radius:8px;
@@ -247,7 +247,7 @@ input,select,textarea{font-family:inherit;}
 }
 .doc-back{
   position:absolute;
-  width:330px;height:470px;
+  width:330px;height:530px;
   background:#f1f1f1;
   border:1px solid #e0e0e0;
   border-radius:8px;
@@ -257,7 +257,7 @@ input,select,textarea{font-family:inherit;}
 }
 .doc-back-2{
   position:absolute;
-  width:330px;height:470px;
+  width:330px;height:530px;
   background:var(--purple);
   border-radius:8px;
   transform:rotate(7deg) translateX(44px) translateY(32px);
@@ -296,16 +296,16 @@ input,select,textarea{font-family:inherit;}
   font-size:8.5px;letter-spacing:0.18em;text-transform:uppercase;
   color:#999;font-weight:700;margin-bottom:10px;
 }
-.doc-toc{display:flex;flex-direction:column;gap:9px;flex:1;}
+.doc-toc{display:flex;flex-direction:column;gap:8px;flex:1;}
 .doc-toc-item{
   display:flex;align-items:baseline;gap:8px;
-  font-size:10.5px;color:var(--black);
+  font-size:9.5px;color:var(--black);white-space:nowrap;
 }
 .doc-toc-num{
-  font-family:'Poppins',sans-serif;font-weight:800;font-size:9px;
+  font-family:'Poppins',sans-serif;font-weight:800;font-size:8.5px;
   color:var(--purple);min-width:14px;letter-spacing:0.05em;
 }
-.doc-toc-name{flex:1;font-weight:500;}
+.doc-toc-name{flex:1;font-weight:500;overflow:hidden;text-overflow:ellipsis;}
 .doc-toc-dots{
   flex:1;border-bottom:1px dotted rgba(10,11,14,0.2);
   transform:translateY(-2px);
@@ -824,7 +824,7 @@ footer{
             </div>
 
             <div class="doc-footer">
-              <div class="doc-footer-mark"><div class="m">O</div><span>One Click Digital</span></div>
+              <div class="doc-footer-mark"><span>One Click Digital</span></div>
               <span>v1 · Confidential</span>
             </div>
           </div>
