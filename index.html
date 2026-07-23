@@ -716,6 +716,98 @@ footer{
 .d2{animation-delay:.18s;opacity:0;}
 .d3{animation-delay:.3s;opacity:0;}
 .d4{animation-delay:.44s;opacity:0;}
+
+/* ── BONUS / WHAT YOU GET TODAY ── */
+.core-offer-box{
+  background:var(--purple-bg);border:1px solid var(--purple-border);
+  border-radius:16px;padding:28px 32px;margin-bottom:28px;
+}
+@media(max-width:600px){.core-offer-box{padding:22px 20px;}}
+.core-offer-label{
+  font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;
+  color:var(--purple);margin-bottom:10px;
+}
+.core-offer-box h3{font-size:1.25rem;margin-bottom:12px;letter-spacing:-0.02em;}
+.core-value{color:var(--purple);}
+.core-offer-list{list-style:none;display:flex;flex-direction:column;gap:8px;}
+.core-offer-list li{
+  display:flex;align-items:flex-start;gap:10px;
+  font-size:0.92rem;color:var(--grey);line-height:1.5;
+}
+.core-offer-list li::before{
+  content:'';flex-shrink:0;margin-top:2px;
+  width:18px;height:18px;border-radius:50%;background:var(--purple);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M2 6l3 3 5-5' stroke='white' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:center;background-size:65%;
+}
+.bonuses-header{
+  display:flex;align-items:center;gap:14px;margin-bottom:16px;flex-wrap:wrap;
+}
+.bonuses-header h3{font-size:1.2rem;letter-spacing:-0.02em;margin-bottom:0;}
+.bonus-included{
+  font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--purple);background:var(--purple-bg);border:1px solid var(--purple-border);
+  padding:4px 12px;border-radius:999px;white-space:nowrap;
+}
+.bonus-list{
+  border:1px solid var(--border);border-radius:16px;overflow:hidden;
+  background:white;margin-bottom:24px;
+}
+.bonus-item{
+  display:flex;align-items:flex-start;gap:18px;
+  padding:22px 24px;border-bottom:1px solid var(--border);
+}
+.bonus-item:last-child{border-bottom:0;}
+.bonus-item:nth-child(even){background:var(--bg2);}
+.bonus-num{
+  width:36px;height:36px;border-radius:50%;
+  background:var(--purple);color:white;
+  display:grid;place-items:center;
+  font-weight:800;font-size:0.9rem;flex-shrink:0;
+}
+.bonus-title{font-weight:700;font-size:0.98rem;margin-bottom:5px;color:var(--black);}
+.bonus-val{color:var(--purple);}
+.bonus-item p{font-size:0.88rem;color:var(--grey);line-height:1.55;}
+.offer-total-box{
+  border:1px solid var(--purple-border);border-radius:16px;overflow:hidden;
+  max-width:560px;margin:0 auto 32px;
+}
+.offer-total-row{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:12px 24px;border-bottom:1px solid var(--purple-border);
+  font-size:0.92rem;color:var(--grey);background:var(--purple-bg);
+}
+.offer-total-grand{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:14px 24px;border-bottom:1px solid var(--purple-border);
+  font-weight:700;color:var(--black);font-size:1rem;background:var(--purple-bg);
+}
+.offer-price-row{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:18px 24px;background:var(--purple);color:white;
+  font-weight:700;font-size:1rem;
+}
+.offer-price{font-size:1.6rem;font-weight:800;letter-spacing:-0.03em;line-height:1;}
+.offer-price small{font-size:0.72rem;font-weight:600;opacity:0.85;}
+
+/* ── VIDEO GRID ── */
+.video-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:16px;
+  margin-bottom:48px;
+}
+@media(max-width:860px){.video-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:540px){.video-grid{grid-template-columns:1fr;}}
+.video-card{
+  position:relative;width:100%;padding-top:56.25%;
+  background:#000;border-radius:12px;overflow:hidden;
+  box-shadow:0 8px 24px rgba(0,0,0,0.12);
+}
+.video-card iframe{
+  position:absolute;top:0;left:0;width:100%;height:100%;border:0;
+}
+
+/* ── STAT SMALL NOTE ── */
+.stat-note{font-size:0.68rem;color:var(--grey);font-weight:500;margin-top:4px;line-height:1.3;}
 </style>
 </head>
 <body>
@@ -739,13 +831,13 @@ footer{
         </div>
         <h1>Your custom <span class="accent">AI Roadmap</span> — built around how you actually work.</h1>
         <p class="hero-sub">
-          We analyse your business, identify your biggest time drains, and hand you a clear,
-          step-by-step plan to <strong>automate the right things</strong> — without the tech overwhelm.
+          We analyse your construction business, identify your biggest time drains, and hand you a clear,
+          actionable AI plan you can act on. Today, webinar attendees get the full Roadmap bundle
+          — session + 5 bonuses — for <strong>$995 inc GST.</strong>
         </p>
 
         <div class="hero-cta-row">
           <a href="https://legacymedia.oneclickdigital.net.au/ai-integration" class="cta-pill large">Get Your AI Roadmap →</a>
-          <span class="sub-note">Delivered in 5 business days.</span>
         </div>
 
         <div class="hero-meta">
@@ -843,9 +935,86 @@ footer{
         <div class="stat-lbl">Automations identified</div>
       </div>
       <div class="stat-cell" role="listitem">
-        <div class="stat-val">5 days</div>
-        <div class="stat-lbl">Delivered as a PDF</div>
+        <div class="stat-val">100%</div>
+        <div class="stat-lbl">Money Back Guarantee</div>
+        <div class="stat-note">If you don't get 10x the value</div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── WHAT YOU GET TODAY ── -->
+<section class="section" id="what-you-get">
+  <div class="wrap-wide">
+    <div class="section-head">
+      <span class="section-label">Today's Offer</span>
+      <h2 class="section-title">What you get <span class="accent">when you join today</span></h2>
+    </div>
+
+    <div class="core-offer-box">
+      <div class="core-offer-label">The Core Offer</div>
+      <h3>Your AI Roadmap Session &amp; Document <span class="core-value">— $1,500 value</span></h3>
+      <ul class="core-offer-list">
+        <li>A 90-minute private AI Roadmap Session for your construction business.</li>
+        <li>Your custom AI Roadmap document.</li>
+      </ul>
+    </div>
+
+    <div class="bonuses-header">
+      <h3>Webinar-Only Bonuses</h3>
+      <span class="bonus-included">Included today for $995 inc GST</span>
+    </div>
+
+    <div class="bonus-list">
+      <div class="bonus-item">
+        <div class="bonus-num">1</div>
+        <div>
+          <div class="bonus-title">The Second Seat <span class="bonus-val">— $495</span></div>
+          <p>Bring a business partner or key team member into the Roadmap Session so you're not the only one who understands the plan.</p>
+        </div>
+      </div>
+      <div class="bonus-item">
+        <div class="bonus-num">2</div>
+        <div>
+          <div class="bonus-title">The Session Recording <span class="bonus-val">— $200</span></div>
+          <p>A full recording of your Roadmap Session so your team can rewatch, train, and implement without you repeating yourself.</p>
+        </div>
+      </div>
+      <div class="bonus-item">
+        <div class="bonus-num">3</div>
+        <div>
+          <div class="bonus-title">30 Days Direct Email Access <span class="bonus-val">— $750</span></div>
+          <p>Ask implementation questions as you roll out your first automations. Straight to my inbox for 30 days after your session.</p>
+        </div>
+      </div>
+      <div class="bonus-item">
+        <div class="bonus-num">4</div>
+        <div>
+          <div class="bonus-title">30-Day Check-In Call <span class="bonus-val">— $375</span></div>
+          <p>A follow-up call 30 days after your Roadmap Session to review what's been implemented, clear roadblocks, and prioritise the next steps.</p>
+        </div>
+      </div>
+      <div class="bonus-item">
+        <div class="bonus-num">5</div>
+        <div>
+          <div class="bonus-title">90-Day Rollover Credit <span class="bonus-val">— $995</span></div>
+          <p>If you start an implementation project with us within 90 days, we treat your $995 as a credit against that work. Your Roadmap becomes a deposit, not a sunk cost.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="offer-total-box">
+      <div class="offer-total-row"><span>Total bonus value</span><span>$2,815</span></div>
+      <div class="offer-total-row"><span>Core Roadmap value</span><span>$1,500</span></div>
+      <div class="offer-total-grand"><span>Total value</span><span>$4,300+</span></div>
+      <div class="offer-price-row">
+        <span>Today for webinar attendees</span>
+        <span class="offer-price">$995 <small>inc GST</small></span>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:8px;">
+      <a href="https://legacymedia.oneclickdigital.net.au/ai-integration" class="cta-pill large">Get Your AI Roadmap →</a>
     </div>
   </div>
 </section>
@@ -922,40 +1091,40 @@ footer{
       <div class="inside-card">
         <div class="area-num">01</div>
         <div>
-          <h4>Sales</h4>
-          <p>Lead qualification, follow-up sequences, CRM updates, win/loss analysis.</p>
+          <h4>Project Management</h4>
+          <p>Job scheduling, task delegation, progress tracking, milestone updates and subcontractor coordination.</p>
         </div>
       </div>
 
       <div class="inside-card">
         <div class="area-num">02</div>
         <div>
-          <h4>Proposals</h4>
-          <p>Scope drafts, pricing builds, document generation, version tracking.</p>
+          <h4>CRM</h4>
+          <p>Lead capture, follow-up sequences, pipeline management, win/loss tracking and client records.</p>
         </div>
       </div>
 
       <div class="inside-card">
         <div class="area-num">03</div>
         <div>
-          <h4>Client Comms</h4>
-          <p>Status updates, change-order summaries, weekly client digests.</p>
+          <h4>Phone System</h4>
+          <p>Call routing, voicemail-to-text, missed call follow-ups, after-hours response automation.</p>
         </div>
       </div>
 
       <div class="inside-card">
         <div class="area-num">04</div>
         <div>
-          <h4>Site Ops</h4>
-          <p>Daily reports, defect lists, photo logs, subbie coordination.</p>
+          <h4>OHS</h4>
+          <p>Safety checklists, incident reporting, induction reminders, compliance document management.</p>
         </div>
       </div>
 
       <div class="inside-card">
         <div class="area-num">05</div>
         <div>
-          <h4>Admin &amp; Finance</h4>
-          <p>Invoice prep, reconciliation summaries, payroll prep, compliance reminders.</p>
+          <h4>Finance</h4>
+          <p>Invoice prep, payment follow-ups, reconciliation summaries, payroll prep and compliance reminders.</p>
         </div>
       </div>
 
@@ -976,16 +1145,16 @@ footer{
   <div class="wrap">
     <div class="section-head">
       <span class="section-label">How it works</span>
-      <h2 class="section-title">Four steps. <span class="accent">Five days.</span> Done.</h2>
-      <p class="section-sub">No discovery calls that go nowhere. No vague "AI strategy" decks. A document you can act on.</p>
+      <h2 class="section-title">Four steps. <span class="accent">One custom strategy.</span> Done.</h2>
+      <p class="section-sub">A full discovery call, market research, and a 90-minute walk-through — then 30 days of support as you implement.</p>
     </div>
     <div class="how-list" role="list">
 
       <div class="how-step" role="listitem">
         <div class="how-num" aria-hidden="true">1</div>
         <div class="how-body">
-          <h4>You fill out the questionnaire</h4>
-          <p>A focused 15-minute questionnaire about your business, your tools, your team and your biggest time drains.</p>
+          <h4>Book your discovery call</h4>
+          <p>A focused call with our team to learn your business, your tools, and where your biggest time drains are.</p>
         </div>
         <div class="how-time">Day 1</div>
       </div>
@@ -993,17 +1162,17 @@ footer{
       <div class="how-step" role="listitem">
         <div class="how-num" aria-hidden="true">2</div>
         <div class="how-body">
-          <h4>We build your roadmap</h4>
-          <p>Our team analyses your answers and maps automations to your actual tools, team structure and pain points — not a generic playbook.</p>
+          <h4>We research your business</h4>
+          <p>Our team goes back and does market research, then maps out a fully custom AI strategy tailored to how your business actually runs.</p>
         </div>
-        <div class="how-time">Day 1–4</div>
+        <div class="how-time">Days 1–4</div>
       </div>
 
       <div class="how-step" role="listitem">
         <div class="how-num" aria-hidden="true">3</div>
         <div class="how-body">
-          <h4>You receive your document</h4>
-          <p>A polished PDF delivered within 5 business days. Yours to keep, share with your team, and implement at your pace.</p>
+          <h4>Your 90-minute strategy walk-through</h4>
+          <p>A private 90-minute session where we walk you through every part of your custom AI Roadmap — together. You leave with a clear plan.</p>
         </div>
         <div class="how-time">Day 5</div>
       </div>
@@ -1011,10 +1180,10 @@ footer{
       <div class="how-step" role="listitem">
         <div class="how-num" aria-hidden="true">4</div>
         <div class="how-body">
-          <h4>Optional: implementation support</h4>
-          <p>Want a hand setting it up? We can build the first three automations with you, train your team, and stay on call.</p>
+          <h4>30 days of direct support</h4>
+          <p>After your session, you get 30 days of direct email access to ask questions and keep momentum as you implement.</p>
         </div>
-        <div class="how-time">Optional</div>
+        <div class="how-time">30 Days</div>
       </div>
 
     </div>
@@ -1046,7 +1215,7 @@ footer{
     <div class="section-head">
       <span class="section-label">Google Reviews</span>
       <h2 class="section-title">Real results from real <span class="accent">construction businesses.</span></h2>
-      <p class="section-sub">Don't take our word for it — here's what business owners say after working with One Click Digital.</p>
+      <p class="section-sub">Don't take our word for it — here's what business owners say after working with us.</p>
     </div>
     <div class="testi-grid">
 
@@ -1397,6 +1566,29 @@ footer{
       </div>
 
     </div>
+
+    <!-- Video testimonials -->
+    <div class="video-grid" style="margin-top:48px;">
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/DeO4bOgC47" title="Client testimonial 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/9Fd09gSw1N7" title="Client testimonial 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/bN6cZ8ZJrRg" title="Client testimonial 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/7Yb2YcDb287" title="Client testimonial 4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/GND7K0DcPl0" title="Client testimonial 5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/F8sKKaLKm0" title="Client testimonial 6" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -1412,26 +1604,34 @@ footer{
 
       <div class="faq-item open">
         <div class="faq-q" role="button" aria-expanded="true" tabindex="0">
+          <span>What exactly do I get for $995 inc GST?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </div>
+        <div class="faq-a">You get a full discovery call with our team, custom market research on your business, a 90-minute private strategy walk-through where we present your personalised AI Roadmap, and 30 days of direct email access for questions as you implement. Plus all five bonuses: a Second Seat, the session recording, 30 days direct email access, a 30-day check-in call, and the 90-day Rollover Credit.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" role="button" aria-expanded="false" tabindex="0">
+          <span>How does the 90-day Rollover Credit work?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </div>
+        <div class="faq-a">Want a hand setting it up? If you start an implementation project with us within 90 days, we apply your $995 inc GST as a credit against that work. We can build the first automations with you, train your team, and stay on call. Your Roadmap becomes a deposit, not a sunk cost.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" role="button" aria-expanded="false" tabindex="0">
+          <span>Who should take the Second Seat?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </div>
+        <div class="faq-a">Anyone who will be hands-on with implementation — your operations manager, a key admin, or your most tech-savvy team member. Two people in the walk-through means faster adoption and someone to keep momentum after the session.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" role="button" aria-expanded="false" tabindex="0">
           <span>Do I need any technical experience or a developer?</span>
           <span class="faq-icon" aria-hidden="true">+</span>
         </div>
-        <div class="faq-a">No. The roadmap is written for business owners, not engineers. Every automation has a plain-English step-by-step guide, and the prompts are copy-and-paste. If you can use email, you can implement the first wave.</div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-q" role="button" aria-expanded="false" tabindex="0">
-          <span>How is this different from a generic "AI strategy" PDF?</span>
-          <span class="faq-icon" aria-hidden="true">+</span>
-        </div>
-        <div class="faq-a">Generic AI strategy decks tell you AI is important. The Roadmap tells you which three things to automate first in your business, what tools to use, what each one costs, and exactly how to set it up. It is built from your questionnaire — not a template.</div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-q" role="button" aria-expanded="false" tabindex="0">
-          <span>How long does it take to receive my Roadmap?</span>
-          <span class="faq-icon" aria-hidden="true">+</span>
-        </div>
-        <div class="faq-a">Five business days from when we receive your completed questionnaire. You will get a polished PDF, yours to keep, share with your team, and reference forever.</div>
+        <div class="faq-a">No. The roadmap is written for business owners, not engineers. Every automation recommendation comes with plain-English guidance, and we walk you through it live in the session. If you can use email, you can get started.</div>
       </div>
 
       <div class="faq-item">
@@ -1439,15 +1639,7 @@ footer{
           <span>I'm in construction — but my business is small. Is this for me?</span>
           <span class="faq-icon" aria-hidden="true">+</span>
         </div>
-        <div class="faq-a">Yes. Smaller operators usually save the most time because they're doing every role themselves. The roadmap scales to your team size — even if it is just you.</div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-q" role="button" aria-expanded="false" tabindex="0">
-          <span>What if I want help implementing the automations?</span>
-          <span class="faq-icon" aria-hidden="true">+</span>
-        </div>
-        <div class="faq-a">Optional implementation support is available. We can build the first three automations with you, train your team, and stay on call for questions. It is a separate engagement after delivery.</div>
+        <div class="faq-a">Yes. Smaller operators usually save the most time because they're doing every role themselves. The strategy is scaled to your team size — even if it's just you.</div>
       </div>
 
       <div class="faq-item">
@@ -1455,7 +1647,7 @@ footer{
           <span>Will the recommended tools cost a lot every month?</span>
           <span class="faq-icon" aria-hidden="true">+</span>
         </div>
-        <div class="faq-a">Most of the automations we recommend run on tools you are likely already paying for, or low-cost AI tools ($20–$50/month). The roadmap gives you exact monthly costs upfront — no surprises.</div>
+        <div class="faq-a">Most automations run on tools you are likely already paying for, or low-cost AI tools ($20–$50/month). We give you exact monthly costs as part of your strategy — no surprises.</div>
       </div>
 
     </div>
@@ -1470,26 +1662,73 @@ footer{
       Let's build you a system.
     </h2>
     <p>
-      A custom AI Roadmap, mapped to your tools, your team and the time drains
-      you'd kill to be rid of — delivered in 5 business days.
+      A custom AI strategy session, mapped to your tools, your team and the time drains
+      you'd kill to be rid of.
     </p>
-    <a href="https://legacymedia.oneclickdigital.net.au/ai-integration" class="cta-pill large">Get Your AI Roadmap →</a>
-    <div class="promo-strip">
-      <div>
-        <div class="val">5 Days</div>
-        <div class="val-lbl">To delivery</div>
+    <a href="https://legacymedia.oneclickdigital.net.au/ai-integration" class="cta-pill large">Book Your Discovery Call →</a>
+
+    <!-- Bonus stack mirror -->
+    <div class="core-offer-box" style="margin-top:40px;text-align:left;">
+      <div class="bonuses-header">
+        <h3>Everything included today</h3>
+        <span class="bonus-included">$995 inc GST</span>
       </div>
-      <div class="div" aria-hidden="true"></div>
-      <div class="body">
-        <strong>15+ automation opportunities</strong> identified across sales, proposals, client comms, site ops and admin — built around how you actually work.
+      <div class="bonus-list">
+        <div class="bonus-item">
+          <div class="bonus-num">1</div>
+          <div>
+            <div class="bonus-title">Discovery Call + Custom Strategy Session <span class="bonus-val">— Core offer</span></div>
+            <p>Full 90-minute walk-through of your personalised AI Roadmap with our team.</p>
+          </div>
+        </div>
+        <div class="bonus-item">
+          <div class="bonus-num">2</div>
+          <div>
+            <div class="bonus-title">The Second Seat <span class="bonus-val">— $495</span></div>
+            <p>Bring a business partner, ops manager, or team member into the session at no extra cost.</p>
+          </div>
+        </div>
+        <div class="bonus-item">
+          <div class="bonus-num">3</div>
+          <div>
+            <div class="bonus-title">The Session Recording <span class="bonus-val">— $200</span></div>
+            <p>Full HD recording of your walk-through — share it with your team and revisit it anytime.</p>
+          </div>
+        </div>
+        <div class="bonus-item">
+          <div class="bonus-num">4</div>
+          <div>
+            <div class="bonus-title">30 Days Direct Email Access <span class="bonus-val">— $750</span></div>
+            <p>Ask implementation questions straight to our inbox for 30 days after your session.</p>
+          </div>
+        </div>
+        <div class="bonus-item">
+          <div class="bonus-num">5</div>
+          <div>
+            <div class="bonus-title">30-Day Check-In Call <span class="bonus-val">— $375</span></div>
+            <p>A follow-up call 30 days later to review progress and unblock anything slowing you down.</p>
+          </div>
+        </div>
+        <div class="bonus-item">
+          <div class="bonus-num">6</div>
+          <div>
+            <div class="bonus-title">90-Day Rollover Credit <span class="bonus-val">— $995</span></div>
+            <p>Start an implementation project within 90 days and your $995 becomes a credit against that work.</p>
+          </div>
+        </div>
+      </div>
+      <div class="offer-total-box">
+        <div class="offer-total-row"><span>Total bonus value</span><span>$2,815</span></div>
+        <div class="offer-price-row"><span>You pay today</span><span>$995 <small>inc GST</small></span></div>
       </div>
     </div>
+
     <div class="closing-meta">
-      <span>15 automations</span>
+      <span>Discovery call included</span>
       <span class="sep">·</span>
-      <span>5 day delivery</span>
+      <span>90-min strategy session</span>
       <span class="sep">·</span>
-      <span>No tech experience required</span>
+      <span>30 days support</span>
     </div>
   </div>
 </section>
