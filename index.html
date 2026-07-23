@@ -831,7 +831,7 @@ footer{
 }
 .webinar-price-note s{color:var(--grey);font-weight:500;text-decoration:line-through;}
 
-/* ── TESTI VIDEO CARD ── */
+/* ── TESTI VIDEO CARD (inline masonry) ── */
 .testi-video{
   break-inside:avoid;margin-bottom:14px;
   border-radius:14px;overflow:hidden;
@@ -840,6 +840,35 @@ footer{
 }
 .testi-video iframe{
   position:absolute;top:0;left:0;width:100%;height:100%;border:0;
+}
+
+/* ── VIDEO SHOWCASE (alternating layout above testimonials) ── */
+.video-showcase{
+  display:flex;flex-direction:column;gap:20px;
+  margin-bottom:56px;
+}
+.vshow-row{display:flex;}
+.vshow-row.center{justify-content:center;}
+.vshow-row.left{justify-content:flex-start;}
+.vshow-row.right{justify-content:flex-end;}
+.vshow-item{
+  width:62%;position:relative;
+  padding-top:calc(62% * 0.5625);
+  background:#000;border-radius:14px;overflow:hidden;
+  box-shadow:0 10px 32px rgba(0,0,0,0.14);
+}
+.vshow-row.left .vshow-item,
+.vshow-row.right .vshow-item{
+  width:54%;
+  padding-top:calc(54% * 0.5625);
+}
+.vshow-item iframe{
+  position:absolute;top:0;left:0;width:100%;height:100%;border:0;
+}
+@media(max-width:768px){
+  .vshow-item,
+  .vshow-row.left .vshow-item,
+  .vshow-row.right .vshow-item{width:100%;padding-top:56.25%;}
 }
 
 /* ── DOC CARD HEADER STRIP ── */
@@ -1268,6 +1297,7 @@ footer{
       <h2 class="section-title">Real results from real <span class="accent">construction businesses.</span></h2>
       <p class="section-sub">Don't take our word for it — here's what business owners say after working with us.</p>
     </div>
+
     <div class="testi-grid">
 
       <!-- AI Implementation review — top -->
