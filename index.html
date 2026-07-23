@@ -811,15 +811,15 @@ footer{
 
 /* ── COUNTDOWN BAR ── */
 .countdown-bar{
-  display:flex;align-items:center;justify-content:center;gap:10px;
+  display:flex;align-items:center;justify-content:center;gap:12px;
   width:fit-content;
-  background:rgba(123,44,191,0.08);border:1px solid var(--purple-border);
-  border-radius:100px;padding:8px 18px;margin-bottom:16px;
-  font-size:0.88rem;font-weight:600;color:var(--black);
+  background:rgba(123,44,191,0.08);border:2px solid var(--purple-border);
+  border-radius:100px;padding:14px 32px;margin-bottom:20px;
+  font-size:1rem;font-weight:600;color:var(--black);
   margin-left:auto;margin-right:auto;
 }
 .cd-label{color:var(--grey);font-weight:500;}
-.cd-timer{color:var(--purple);font-variant-numeric:tabular-nums;font-weight:800;letter-spacing:0.03em;font-size:1rem;}
+.cd-timer{color:var(--purple);font-variant-numeric:tabular-nums;font-weight:800;letter-spacing:0.06em;font-size:1.8rem;}
 .cd-expired{color:#DC2626;}
 
 /* ── WEBINAR PRICE CALLOUT ── */
@@ -1866,7 +1866,7 @@ footer{
 
 // Countdown timer — target: 2026-07-23 19:00:00 AEST (UTC+10)
 (function () {
-  var target = new Date('2026-07-23T06:00:00Z'); // 4pm AEST = 6am UTC
+  var target = new Date('2026-07-23T09:00:00Z'); // 7pm AEST = 9am UTC
   var timerEl = document.getElementById('cd-timer');
   var barEl = document.getElementById('countdown-bar');
   if (!timerEl) return;
