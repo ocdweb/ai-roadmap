@@ -813,7 +813,7 @@ footer{
 .countdown-bar{
   display:inline-flex;align-items:center;gap:10px;
   background:rgba(123,44,191,0.08);border:1px solid var(--purple-border);
-  border-radius:100px;padding:8px 18px;margin-top:16px;
+  border-radius:100px;padding:8px 18px;margin-bottom:16px;
   font-size:0.88rem;font-weight:600;color:var(--black);
 }
 .cd-label{color:var(--grey);font-weight:500;}
@@ -867,6 +867,10 @@ footer{
   <div class="wrap-wide">
     <div class="hero-grid">
       <div class="fu d1">
+        <div class="countdown-bar" id="countdown-bar" aria-live="polite" aria-label="Offer countdown timer">
+          <span class="cd-label">Should lapse by 7.00pm.</span>
+          <span class="cd-timer" id="cd-timer">--:--:--</span>
+        </div>
         <div class="hero-eyebrow">
           <span class="pulse-dot" aria-hidden="true"></span>
           <span>For Construction Business Owners</span>
@@ -877,11 +881,6 @@ footer{
           actionable AI plan you can act on. Today, webinar attendees get the full Roadmap bundle
           — session + 5 bonuses — for <strong>$995 inc GST.</strong>
         </p>
-
-        <div class="countdown-bar" id="countdown-bar" aria-live="polite" aria-label="Offer countdown timer">
-          <span class="cd-label">Should lapse by 7.00pm.</span>
-          <span class="cd-timer" id="cd-timer">--:--:--</span>
-        </div>
 
         <div class="hero-cta-row">
           <a href="https://legacymedia.oneclickdigital.net.au/ai-integration" class="cta-pill large">Get Your AI Roadmap →</a>
