@@ -869,7 +869,6 @@ footer{
   <div class="wrap-wide">
     <div style="text-align:center;margin-bottom:24px;">
       <div class="countdown-bar" id="countdown-bar" aria-live="polite" aria-label="Offer countdown timer">
-        <span class="cd-label">Should lapse by 7.00pm.</span>
         <span class="cd-timer" id="cd-timer">--:--:--</span>
       </div>
     </div>
@@ -1833,7 +1832,7 @@ footer{
 
 // Countdown timer — target: 2026-07-23 19:00:00 AEST (UTC+10)
 (function () {
-  var target = new Date('2026-07-23T09:00:00Z'); // 7pm AEST = 9am UTC
+  var target = new Date('2026-07-23T06:00:00Z'); // 4pm AEST = 6am UTC
   var timerEl = document.getElementById('cd-timer');
   var barEl = document.getElementById('countdown-bar');
   if (!timerEl) return;
